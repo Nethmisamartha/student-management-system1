@@ -4,8 +4,10 @@ services:
     container_name: student-backend
     ports:
       - "5001:5000"
-    env_file:
-      - ./backend/.env
+    environment:
+      SUPABASE_URL: ${SUPABASE_URL:-https://example.supabase.co}
+      SUPABASE_KEY: ${SUPABASE_KEY:-placeholder}
+      PORT: 5000
     restart: unless-stopped
 
   frontend:
