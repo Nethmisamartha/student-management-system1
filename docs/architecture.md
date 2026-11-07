@@ -1,4 +1,4 @@
-# Student Management System - Architecture Diagram
+﻿# Student Management System - Architecture Diagram
 
 ```mermaid
 flowchart TD
